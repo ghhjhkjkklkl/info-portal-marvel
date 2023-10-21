@@ -9,10 +9,10 @@ function Header() {
       </h1>
       <ul className="header__list">
         <li className="header__item">
-          <p className="header__link active">Characters</p>
+          <a className="header__link active">Characters</a>
         </li>
         <li className="header__item">
-          <p className="header__link">Comics</p>
+          <a className="header__link">Comics</a>
         </li>
       </ul>
     </header>

@@ -49,15 +49,23 @@
   overflow: hidden;
 }
 
-@media (max-width: 1023px) {
+// @media (max-width: 1023px) {
+//   .char-list__list {
+//     grid-template-columns: 1fr 1fr;
+//     max-width: 425px;
+//     margin-bottom: 30px;
+//   }
+// }
+
+@media (max-width: 767px) {
   .char-list__list {
     grid-template-columns: 1fr 1fr;
-    max-width: 425px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    max-width: 200px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   .char-list__list {
     grid-template-columns: 1fr;
     margin-bottom: 10px;
