@@ -1,10 +1,10 @@
-import { Component } from "react";
-import MarvelService from "../../services/MarvelService";
-import Skeleton from "../skeleton/Skeleton";
-import Error from "../error/Error";
-import Spinner from "../spinner/Spinner";
-import close from "../../resources/img/close.svg";
-import "./charInfo.scss";
+import { Component } from 'react';
+import MarvelService from '../../services/MarvelService';
+import Skeleton from '../skeleton/Skeleton';
+import Error from '../error/Error';
+import Spinner from '../spinner/Spinner';
+import close from '../../resources/img/close.svg';
+import './charInfo.scss';
 
 class CharInfo extends Component {
   state = {
@@ -20,6 +20,7 @@ class CharInfo extends Component {
     this.setState({
       isMobile: document.documentElement.clientWidth <= 1050 ? true : false,
     });
+    document.body.style.overflow = 'hidden';
   }
 
   componentDidUpdate(prevProps) {
@@ -42,7 +43,7 @@ class CharInfo extends Component {
       .catch(this.onError);
   };
 
-  onCharLoaded = (char) => {
+  onCharLoaded = char => {
     this.setState({
       char,
       loading: false,
@@ -64,8 +65,8 @@ class CharInfo extends Component {
     const skeleton = char || spinner || errorMessage ? null : <Skeleton />;
     return (
       <div
-        className={`char-info__wrapper ${isMobile ? "isMobile" : ""} ${
-          this.props.isShow ? "show" : "hidden"
+        className={`char-info__wrapper ${isMobile ? 'isMobile' : ''} ${
+          this.props.isShow ? 'show' : 'hidden'
         }`}
       >
         {skeleton || spinner || errorMessage || (
@@ -101,7 +102,7 @@ function CharInfoTemp({ char, onCloseCharInfo }) {
         alt="close char info"
       />
       <div className="char-info__inner">
-        <img className={"char-info__img"} src={image} alt={name} />
+        <img className={'char-info__img'} src={image} alt={name} />
         <div>
           <h2 className="char-info__name">{name}</h2>
           <a className="link" href={homepage}>
