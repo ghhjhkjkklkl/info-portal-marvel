@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/info-portal-marvel/static/css/main.7acaea2f.css",
+    "main.js": "/info-portal-marvel/static/js/main.07d3183d.js",
+    "index.html": "/info-portal-marvel/index.html",
+    "main.7acaea2f.css.map": "/info-portal-marvel/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/info-portal-marvel/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
