@@ -1,0 +1,87 @@
+.char-info__wrapper {
+  max-width: 425px;
+  width: 100%;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  &.isMobile {
+    display: none;
+  }
+}
+
+.char-info__close {
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin-left: auto;
+}
+
+.char-info {
+  padding: 25px;
+}
+
+.char-info__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.char-info__inner a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.char-info__name {
+  margin-bottom: 10px;
+}
+
+.char-info__img {
+  width: 150px;
+  height: 150px;
+}
+
+.char-info__descr {
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.char-info__list-title {
+  margin-bottom: 15px;
+}
+
+.char-info__comics-item {
+  font-size: 14px;
+  padding: 4px 0px 3px 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .char-info__wrapper {
+    max-width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: #fff;
+    &.show {
+      display: block;
+    }
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
+// @media (max-width: 1050px) {
+//   .char-info__wrapper {
+
+//   }
+// }

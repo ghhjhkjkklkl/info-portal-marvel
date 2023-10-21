@@ -1,0 +1,44 @@
+.header {
+  padding: 50px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title--color {
+  color: var(--accent-color);
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__item {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  padding-right: 5px;
+  &:not(:last-child)::after {
+    content: " / ";
+  }
+}
+
+.header__title {
+  font-size: 28px;
+}
+
+.active {
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 20px 0 20px 0;
+  }
+  .header__title {
+    font-size: 14px;
+  }
+  .header__item {
+    font-size: 12px;
+  }
+}

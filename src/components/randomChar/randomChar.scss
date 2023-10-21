@@ -1,0 +1,95 @@
+.random-char {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 5px 5px 20px 0px #00000040;
+  .spinner {
+    max-width: 150px;
+  }
+}
+
+.random-char__info {
+  padding: 35px 35px 35px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.random-char__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.random-char__img {
+  width: 180px;
+  height: 180px;
+  margin-right: 30px;
+  object-fit: cover;
+  &--not-found {
+    object-fit: contain;
+  }
+}
+
+.random-char__group {
+  max-width: 265px;
+}
+
+.random-char__descr {
+  font-size: 14px;
+  margin: 10px 0 13px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.random-char__link-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.random-char__actions {
+  padding: 35px 0px 35px 40px;
+  background: #232222 url("../../resources/img/mjolnir.png") right -20px bottom 5px/200px
+    no-repeat;
+  color: #ffffff;
+}
+
+.random-char__actions-text {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 900px) {
+  .random-char {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .random-char__info {
+    padding: 2vw;
+  }
+  .random-char__img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+  }
+  .random-char__actions {
+    background: #232222 url("../../resources/img/mjolnir.png") right -20px bottom
+      5px/150px no-repeat;
+    padding: 2vw;
+  }
+  .random-char__actions-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .random-char__img {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+  }
+}

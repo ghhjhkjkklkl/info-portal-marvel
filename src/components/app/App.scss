@@ -1,0 +1,19 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.char-wrapper {
+  padding: 50px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media (max-width: 1050px) {
+  .char-wrapper {
+    justify-content: center;
+  }
+}
