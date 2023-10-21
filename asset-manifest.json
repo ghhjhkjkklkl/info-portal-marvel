@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/info-portal-marvel/static/css/main.7acaea2f.css",
-    "main.js": "/info-portal-marvel/static/js/main.07d3183d.js",
+    "main.css": "/info-portal-marvel/static/css/main.9719ae0b.css",
+    "main.js": "/info-portal-marvel/static/js/main.c1d4bbaa.js",
+    "static/media/error.png": "/info-portal-marvel/static/media/error.bf72e00db09e00656113.png",
+    "static/media/mjolnir.png": "/info-portal-marvel/static/media/mjolnir.61f31e1809f12183a524.png",
+    "static/media/Spinner-3.gif": "/info-portal-marvel/static/media/Spinner-3.b51df3f3ec072548cb48.gif",
     "index.html": "/info-portal-marvel/index.html",
-    "main.7acaea2f.css.map": "/info-portal-marvel/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/info-portal-marvel/static/js/main.07d3183d.js.map"
+    "static/media/close.svg": "/info-portal-marvel/static/media/close.4562155c587028f4ef1901734effc6db.svg",
+    "main.9719ae0b.css.map": "/info-portal-marvel/static/css/main.9719ae0b.css.map",
+    "main.c1d4bbaa.js.map": "/info-portal-marvel/static/js/main.c1d4bbaa.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.9719ae0b.css",
+    "static/js/main.c1d4bbaa.js"
   ]
 }
