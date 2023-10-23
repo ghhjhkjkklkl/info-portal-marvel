@@ -9,10 +9,16 @@ function Header() {
       </h1>
       <ul className="header__list">
         <li className="header__item">
-          <p className="header__link active">Characters</p>
+          // eslint-disable-next-line
+          <a className="header__link active" href="#">
+            Characters
+          </a>
         </li>
         <li className="header__item">
-          <p className="header__link">Comics</p>
+          // eslint-disable-next-line
+          <a className="header__link" href="#">
+            Comics
+          </a>
         </li>
       </ul>
     </header>
