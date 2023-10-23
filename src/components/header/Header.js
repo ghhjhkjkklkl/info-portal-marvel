@@ -8,7 +8,10 @@ function Header() {
         information portal
       </h1>
       <ul className="header__list">
-        <li className="header__item">
+        <li className="header__item active">Characters</li>
+        <li className="header__item">Comics</li>
+
+        {/* <li className="header__item">
           // eslint-disable-next-line
           <a className="header__link active" href="#">
             Characters
@@ -19,7 +22,7 @@ function Header() {
           <a className="header__link" href="#">
             Comics
           </a>
-        </li>
+        </li> */}
       </ul>
     </header>
   );
