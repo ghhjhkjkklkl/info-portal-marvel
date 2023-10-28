@@ -1,3 +1,8 @@
+body.char-info-open {
+  overflow: hidden;
+  background-color: grey;
+}
+
 .char-info__wrapper {
   max-width: 425px;
   width: 100%;
@@ -73,6 +78,7 @@
     background: #fff;
     &.show {
       display: block;
+      overflow: hidden;
     }
     &.hidden {
       display: none;

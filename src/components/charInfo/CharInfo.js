@@ -20,7 +20,6 @@ class CharInfo extends Component {
     this.setState({
       isMobile: document.documentElement.clientWidth <= 1050 ? true : false,
     });
-    document.body.style.overflow = 'hidden';
   }
 
   componentDidUpdate(prevProps) {
@@ -63,6 +62,14 @@ class CharInfo extends Component {
     const errorMessage = error ? <Error /> : null;
     const spinner = loading ? <Spinner /> : null;
     const skeleton = char || spinner || errorMessage ? null : <Skeleton />;
+
+    const isModalOpen = this.props.isShow;
+    if (isModalOpen) {
+      document.body.classList.add('char-info-open');
+    } else {
+      document.body.classList.remove('char-info-open');
+    }
+
     return (
       <div
         className={`char-info__wrapper ${isMobile ? 'isMobile' : ''} ${
