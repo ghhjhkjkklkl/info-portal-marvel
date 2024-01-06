@@ -17,6 +17,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  .error {
+    max-width: 140px;
+  }
 }
 
 .random-char__img {

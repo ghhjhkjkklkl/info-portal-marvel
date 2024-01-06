@@ -19,12 +19,8 @@
   line-height: 1.17;
   padding-right: 5px;
   &:not(:last-child)::after {
-    content: ' / ';
+    content: " / ";
   }
-}
-
-.header__link:not(:last-child)::after {
-  content: ' /';
 }
 
 .header__title {

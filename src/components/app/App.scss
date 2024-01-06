@@ -5,6 +5,18 @@
   padding: 0 15px;
 }
 
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #000000a6;
+  overflow: hidden;
+  z-index: 999;
+  transition: 0.4s;
+}
+
 .char-wrapper {
   padding: 50px 0px 0px 0px;
   display: flex;

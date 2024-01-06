@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Component } from "react";
 
 class ErrorBoundary extends Component {
@@ -12,7 +13,6 @@ class ErrorBoundary extends Component {
   }
   render() {
     const { error } = this.state;
-    console.log(error);
     if (error) {
       return <h2>Something went wrong...</h2>;
     }
